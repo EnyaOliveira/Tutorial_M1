@@ -1,0 +1,174 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Button.tscn" type="PackedScene" id=1]
+[ext_resource path="res://calculadora.gd" type="Script" id=2]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 150.0
+margin_top = -133.0
+margin_right = 185.0
+margin_bottom = -12.0
+script = ExtResource( 2 )
+
+[node name="Display" type="Label" parent="."]
+margin_left = 80.0
+margin_top = 152.0
+margin_right = 363.0
+margin_bottom = 206.0
+rect_scale = Vector2( 2, 2 )
+
+[node name="Button7" parent="." instance=ExtResource( 1 )]
+margin_left = 108.0
+margin_top = 282.0
+margin_right = 157.0
+margin_bottom = 330.0
+rect_scale = Vector2( 2, 2 )
+text = "7"
+
+[node name="Button8" parent="." instance=ExtResource( 1 )]
+margin_left = 238.0
+margin_top = 283.0
+margin_right = 290.0
+margin_bottom = 331.0
+rect_scale = Vector2( 2, 2 )
+text = "8"
+
+[node name="Button9" parent="." instance=ExtResource( 1 )]
+margin_left = 374.0
+margin_top = 284.0
+margin_right = 427.0
+margin_bottom = 333.0
+rect_scale = Vector2( 2, 2 )
+text = "9"
+
+[node name="ButtonMultiplicacao" parent="." instance=ExtResource( 1 )]
+margin_left = 505.0
+margin_top = 284.0
+margin_right = 560.0
+margin_bottom = 331.0
+rect_scale = Vector2( 2, 2 )
+text = "X"
+
+[node name="Button4" parent="." instance=ExtResource( 1 )]
+margin_left = 104.0
+margin_top = 401.0
+margin_right = 155.0
+margin_bottom = 447.0
+rect_scale = Vector2( 2, 2 )
+text = "4"
+
+[node name="Button5" parent="." instance=ExtResource( 1 )]
+margin_left = 239.0
+margin_top = 404.0
+margin_right = 293.0
+margin_bottom = 451.0
+rect_scale = Vector2( 2, 2 )
+text = "5"
+
+[node name="Button6" parent="." instance=ExtResource( 1 )]
+margin_left = 375.0
+margin_top = 401.0
+margin_right = 428.0
+margin_bottom = 450.0
+rect_scale = Vector2( 2, 2 )
+text = "6"
+
+[node name="ButtonSubtracao" parent="." instance=ExtResource( 1 )]
+margin_left = 505.0
+margin_top = 401.0
+margin_right = 561.0
+margin_bottom = 450.0
+rect_scale = Vector2( 2, 2 )
+text = "-"
+
+[node name="Button1" parent="." instance=ExtResource( 1 )]
+margin_left = 100.0
+margin_top = 524.0
+margin_right = 153.0
+margin_bottom = 576.0
+rect_scale = Vector2( 2, 2 )
+text = "1"
+
+[node name="Button2" parent="." instance=ExtResource( 1 )]
+margin_left = 241.0
+margin_top = 520.0
+margin_right = 296.0
+margin_bottom = 572.0
+rect_scale = Vector2( 2, 2 )
+text = "2"
+
+[node name="Button3" parent="." instance=ExtResource( 1 )]
+margin_left = 378.0
+margin_top = 524.0
+margin_right = 430.0
+margin_bottom = 576.0
+rect_scale = Vector2( 2, 2 )
+text = "3"
+
+[node name="ButtonSoma" parent="." instance=ExtResource( 1 )]
+margin_left = 509.0
+margin_top = 523.0
+margin_right = 565.0
+margin_bottom = 574.0
+rect_scale = Vector2( 2, 2 )
+text = "+"
+
+[node name="Button0" parent="." instance=ExtResource( 1 )]
+margin_left = 240.0
+margin_top = 647.0
+margin_right = 299.0
+margin_bottom = 699.0
+rect_scale = Vector2( 2, 2 )
+text = "0"
+
+[node name="ButtonIgual" parent="." instance=ExtResource( 1 )]
+margin_left = 511.0
+margin_top = 644.0
+margin_right = 566.0
+margin_bottom = 695.0
+rect_scale = Vector2( 2, 2 )
+text = "="
+
+[node name="ButtonDivisao" parent="." instance=ExtResource( 1 )]
+margin_left = 380.0
+margin_top = 647.0
+margin_right = 433.0
+margin_bottom = 699.0
+rect_scale = Vector2( 2, 2 )
+text = "/"
+
+[node name="ButtonHistorico" parent="." instance=ExtResource( 1 )]
+margin_left = 99.0
+margin_top = 648.0
+margin_right = 157.0
+margin_bottom = 700.0
+rect_scale = Vector2( 2, 2 )
+text = "H"
+
+[node name="ButtonLimpar" parent="." instance=ExtResource( 1 )]
+margin_left = 95.0
+margin_top = 770.0
+margin_right = 362.0
+margin_bottom = 822.0
+rect_scale = Vector2( 2, 2 )
+text = "Clean"
+
+[connection signal="pressed" from="Button7" to="." method="_on_Button7_pressed"]
+[connection signal="pressed" from="Button8" to="." method="_on_Button8_pressed"]
+[connection signal="pressed" from="Button9" to="." method="_on_Button9_pressed"]
+[connection signal="pressed" from="ButtonMultiplicacao" to="." method="_on_ButtonMultiplicacao_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_Button4_pressed"]
+[connection signal="pressed" from="Button5" to="." method="_on_Button5_pressed"]
+[connection signal="pressed" from="Button6" to="." method="_on_Button6_pressed"]
+[connection signal="pressed" from="ButtonSubtracao" to="." method="_on_ButtonSubtracao_pressed"]
+[connection signal="pressed" from="Button1" to="." method="_on_Button1_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_Button3_pressed"]
+[connection signal="pressed" from="ButtonSoma" to="." method="_on_ButtonSoma_pressed"]
+[connection signal="pressed" from="Button0" to="." method="_on_Button0_pressed"]
+[connection signal="pressed" from="ButtonIgual" to="." method="_on_ButtonIgual_pressed"]
+[connection signal="pressed" from="ButtonDivisao" to="." method="_on_ButtonDivisao_pressed"]
+[connection signal="pressed" from="ButtonHistorico" to="." method="_on_ButtonHistorico_pressed"]
+[connection signal="pressed" from="ButtonLimpar" to="." method="_on_ButtonLimpar_pressed"]
